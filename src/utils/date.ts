@@ -1,5 +1,4 @@
-import { CalendarDate } from './../types/calendar';
-import { CalendarItem } from '../types/calendarScreen';
+import { CalendarDate, CalendarItem } from './../types/calendar';
 
 export const WEEK_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
 

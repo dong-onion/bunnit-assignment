@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import type { LibraryScreenProps } from '../../types/navigation';
 
-const LibraryScreen = () => {
+const LibraryScreen = ({ navigation }: LibraryScreenProps) => {
   return (
     <View style={styles.container}>
       <Text>Library</Text>

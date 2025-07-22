@@ -1,3 +1,5 @@
+export type CalendarViewType = 'month' | 'week';
+
 export interface CalendarDate {
   date: Date;
   isCurrentMonth: boolean;

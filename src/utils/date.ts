@@ -3,6 +3,10 @@ import { CalendarDate, CalendarItem } from './../types/calendar';
 export const WEEK_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
 
 export function isSameDate(a: Date, b: Date): boolean {
+  if (!a || !b || !(a instanceof Date) || !(b instanceof Date)) {
+    return false;
+  }
+
   return (
     a.getFullYear() === b.getFullYear() &&
     a.getMonth() === b.getMonth() &&
@@ -11,6 +15,10 @@ export function isSameDate(a: Date, b: Date): boolean {
 }
 
 export const getWeekStartDate = (date: Date): Date => {
+  if (!date || !(date instanceof Date) || isNaN(date.getTime())) {
+    throw new Error('Invalid date provided to getWeekStartDate');
+  }
+
   const startDate = new Date(date);
   const day = startDate.getDay();
   startDate.setDate(date.getDate() - day); // 일요일로 설정
@@ -18,6 +26,10 @@ export const getWeekStartDate = (date: Date): Date => {
 };
 
 export const createWeekCalendarData = (weekStartDate: Date): CalendarDate[] => {
+  if (!weekStartDate || !(weekStartDate instanceof Date) || isNaN(weekStartDate.getTime())) {
+    throw new Error('Invalid weekStartDate provided to createWeekCalendarData');
+  }
+
   const dates: CalendarDate[] = [];
 
   for (let i = 0; i < 7; i++) {

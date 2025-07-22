@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import type { HomeScreenProps } from '../../types/navigation';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }: HomeScreenProps) => {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>

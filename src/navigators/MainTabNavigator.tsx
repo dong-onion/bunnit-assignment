@@ -6,8 +6,9 @@ import CalendarScreen from '../screens/CalendarScreen';
 import MyPageScreen from '../screens/MyPageScreen';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../styles/colors';
+import type { MainTabParamList } from '../types/navigation';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<MainTabParamList>();
 
 const MainTabNavigator = () => {
   return (

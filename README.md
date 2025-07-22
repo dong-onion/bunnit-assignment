@@ -55,50 +55,8 @@ Level 3: 제스처를 이용한 캘린더 전환
 ```
 
 월 캘린더 ↔ 주 캘린더 전환 구현 부분이 매끄럽지 못하게 구현되었습니다.
-주 캘린더 ↔ 월 캘린더 전환 시, 월 캘린더 초기값 부터 진행
-
----
-
-## Screen
-
-```bash
-screens
-├── CalendarScreen
-└── OtherScreens (추가 가능)
-```
-
----
-
-## Navigator
-
-캘린더 화면은 단일 화면으로 구성되어 있으며, React Navigation을 활용하여 네비게이션을 관리합니다.
-
-```bash
-RootNavigator
-└── CalendarScreen
-```
-
----
-
-## Component
-
-```bash
-components
-├── CalendarHeader  # 캘린더 상단 헤더
-├── MonthItem        # 월 단위 캘린더 아이템
-├── WeekItem         # 주 단위 캘린더 아이템
-└── CommonComponents # 공통 컴포넌트
-```
-
----
-
-## Library
-
-- **React Navigation**: 화면 전환 및 네비게이션 관리
-- **React Native Reanimated**: 부드러운 애니메이션 구현
-- **React Native Gesture Handler**: 스와이프 제스처 처리
-- **TypeScript**: 타입 안전성을 위한 언어
-- **ESLint & Prettier**: 코드 스타일 및 품질 관리
+주 캘린더 ↔ 월 캘린더 전환 시,
+월 캘린더 초기값 부터 진행하는 이슈
 
 ---
 

@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-import colors from '../../../styles/colors';
+import colors from '../../../../styles/colors';
 
 interface Props {
   monthLabel: string;

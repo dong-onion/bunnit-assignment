@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-import colors from '../../../styles/colors';
-import { deviceInfo } from '../../../utils/util';
+import colors from '../../../../styles/colors';
+import { deviceInfo } from '../../../../utils/util';
 
 interface CalendarDayProps {
   date: Date;

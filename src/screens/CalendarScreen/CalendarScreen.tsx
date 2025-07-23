@@ -1,5 +1,5 @@
 import React, { useMemo, useCallback } from 'react';
-import { FlatList, SafeAreaView, StyleSheet } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
 import { GestureDetector } from 'react-native-gesture-handler';
 import Animated from 'react-native-reanimated';
 import CalendarHeader from './components/CalendarHeader';
@@ -12,6 +12,7 @@ import { deviceInfo } from '../../utils/util';
 import MonthItem from './components/MonthItem';
 import WeekItem from './components/WeekItem';
 import type { CalendarScreenProps } from '../../types/navigation';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const { width } = deviceInfo;
 

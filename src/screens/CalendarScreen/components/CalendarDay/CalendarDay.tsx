@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   },
   selectedCircle: {
     backgroundColor: colors.primary,
+    borderRadius: 16,
   },
   selectedText: {
     color: '#fff',
